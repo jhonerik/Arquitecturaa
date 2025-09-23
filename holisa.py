@@ -357,4 +357,17 @@ Traces: Seguimiento de la ruta de una solicitud a través de un sistema distribu
 """
 
 
+# Anezos al tercer cambio Git 
+# Cambio combinacion add y Commit
+# git commit -am "Mensaje del commit"
 
+# Cambio combinacion add y Commit y push
+# git commit -am "Mensaje del commit" && git push origin main
+
+jonclas = 1
+if jonclas == 1:
+    print("Hola Santi")
+else:
+    print("Adios Santi")
+print("Fin del programa")
+# Fin del programa
