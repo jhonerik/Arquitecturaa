@@ -344,7 +344,15 @@ Traces: Seguimiento de la ruta de una solicitud a través de un sistema distribu
 """
 
 """
-- 
+- Entonces ahora realizamos cambios incrementales y medimos su impacto.
+# Gracias por tanto 
+- Ahora podemos ver cómo cada cambio afecta a nuestro sistema.
+- Podemos identificar rápidamente cualquier problema que surja y abordarlo de inmediato.
+- Podemos optimizar continuamente nuestro sistema para mejorar su rendimiento y fiabilidad.
+- Podemos asegurarnos de que nuestro sistema cumple con los requisitos y expectativas de los usuarios.
+- Podemos tomar decisiones informadas sobre futuras mejoras y cambios en nuestro sistema.
+
+
 
 """
 
