@@ -1,9 +1,3 @@
-hola estos son los cambios generados por mi desde el portatil
+si weon eso digo
 
-cambio portatil
-
-
-Nuevos
-cambios
-
-python
+eso
