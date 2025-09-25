@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#2C3E50">
+
+        <!-- Título Principal -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧮 CALCULADORA MÁGICA 🧮"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ECF0F1"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Contenedor de Entradas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <!-- Primer Número -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primer número:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/etNumero1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal|numberSigned"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginBottom="15dp"
+                android:hint="Ingrese el primer número" />
+
+            <!-- Segundo Número -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segundo número:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/etNumero2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal|numberSigned"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_background"
+                android:hint="Ingrese el segundo número" />
+
+        </LinearLayout>
+
+        <!-- Botones de Operaciones Básicas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnSumar"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="➕ SUMAR"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_suma"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnRestar"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="➖ RESTAR"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_resta"
+                    android:layout_marginStart="5dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMultiplicar"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="✖️ MULTIPLICAR"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_multiplicacion"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btnDividir"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="➗ DIVIDIR"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_division"
+                    android:layout_marginStart="5dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Botones Especiales -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/btnPotencia"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="🔢 POTENCIA"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_especial"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btnRaiz"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="√ RAÍZ CUADRADA"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_especial"
+                    android:layout_marginStart="5dp"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRandom"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="🎲 NÚMERO RANDOM"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_especial"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btnCambiarTema"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="🎨 CAMBIAR TEMA"
+                    android:textColor="white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_especial"
+                    android:layout_marginStart="5dp"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Área de Resultado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 RESULTADO:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Esperando operación..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/resultado_background"
+                android:textColor="#2C3E50" />
+
+        </LinearLayout>
+
+        <!-- Historial -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📜 HISTORIAL DE OPERACIONES:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <ListView
+                android:id="@+id/lvHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginBottom="10dp"
+                android:divider="#E0E0E0"
+                android:dividerHeight="1dp" />
+
+            <Button
+                android:id="@+id/btnLimpiarHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="🗑️ Limpiar Historial"
+                android:textColor="white"
+                android:textStyle="bold"
+                android:background="@drawable/button_limpiar"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Barra de Estado -->
+        <TextView
+            android:id="@+id/tvBarraEstado"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Calculadora lista • 00:00:00"
+            android:textSize="11sp"
+            android:textColor="#ECF0F1"
+            android:background="#34495E"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

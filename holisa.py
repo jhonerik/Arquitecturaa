@@ -373,20 +373,6 @@ print("Fin del programa")
 # Fin del programa
 
 print("Fin del programa")
-# Fin del programa
+# Fin del program
+# apapa11!!!!
 
-
-# estos cambios seran en el nuevo pc 
-
-def sumar_dos_numeros():
-    try:
-        num1 = float(input("Introduce el primer número: "))
-        num2 = float(input("Introduce el segundo número: "))
-        resultado = num1 + num2
-        print(f"La suma de {num1} y {num2} es {resultado}")
-    except ValueError:
-        print("Por favor, introduce valores numéricos válidos.")
-
-sumar_dos_numeros()
-
-# Thanks for all
