@@ -10,3 +10,5 @@ suma = num1 + num2 + num3
 
 # Mostrar el resultado
 print("La suma de los tres números es:", suma)
+
+print("Gracias por usar la calculadora de suma.")
