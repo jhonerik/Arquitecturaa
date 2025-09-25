@@ -173,4 +173,4 @@ if __name__ == "__main__":
     for trials in [1000, 10000, 100000]:
         stats = monte_carlo_simulation(trials, seed=42)
         print(f"  Trials: {trials}, π estimate: {stats['pi_estimate']:.10f}, "
-              f"Error: {stats['error']:.10f}, Relative Error: {stats['relative_error']:.6f}%")
+            f"Error: {stats['error']:.10f}, Relative Error: {stats['relative_error']:.6f}%")
