@@ -174,3 +174,8 @@ if __name__ == "__main__":
         stats = monte_carlo_simulation(trials, seed=42)
         print(f"  Trials: {trials}, π estimate: {stats['pi_estimate']:.10f}, "
             f"Error: {stats['error']:.10f}, Relative Error: {stats['relative_error']:.6f}%")
+        
+        print(f"    x_mean: {stats['x_mean']:.4f}, y_mean: {stats['y_mean']:.4f}, "
+            f"x_std: {stats['x_std']:.4f}, y_std: {stats['y_std']:.4f}")
+        print("Gracias")
+        print("Adios")

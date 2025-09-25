@@ -11,7 +11,7 @@ class CalculadoraInteractiva:
         self.root.geometry("500x600")
         self.root.configure(bg='#2C3E50')
         self.root.resizable(False, False)
-        
+
         # Centrar ventana
         self.centrar_ventana()
         
@@ -369,3 +369,6 @@ if __name__ == "__main__":
     calculadora.ejecutar()
 
     # Se aplicaron nuevas mejoras a la calculadora
+
+    # Se agrego la ejecucion de los programas 
+    
