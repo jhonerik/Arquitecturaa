@@ -1,0 +1,1 @@
+estos son los cambios del nuevo pc de mesa 
