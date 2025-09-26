@@ -50,3 +50,8 @@ automáticamente
 • git pull # Actualizar main
 • git merge nombre-rama # Fusionar otra rama en main
 • git push # Subir cambios fusionados
+
+Gracias por todo
+
+
+Eso loco 
